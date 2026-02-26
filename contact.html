@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Hector Hernandez – Church Media System Consultants</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto',sans-serif; }
+body { background:#0b0b0b; color:#e0e0e0; overflow-x:hidden; }
+
+header { position:fixed; top:0; left:0; width:100%; z-index:1000; display:flex; justify-content:space-between; align-items:center; padding:15px 40px; background:linear-gradient(90deg,#111,#1a1a1a); border-bottom:1px solid #00aaff30; box-shadow:0 2px 10px rgba(0,170,255,0.1);}
+header .logo { font-size:1.5rem; font-weight:bold; color:#00aaff;}
+header nav a, .lang-switch { color:#e0e0e0; margin-left:30px; text-decoration:none; font-weight:500; transition:0.3s; cursor:pointer;}
+header nav a:hover, .lang-switch:hover { color:#00aaff; box-shadow:0 0 15px #00aaff;}
+
+.hero { height:50vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:linear-gradient(135deg,#000,#0d0d1a,#001529); background-size:300% 300%; animation:gradientShift 20s ease infinite; padding:0 20px;}
+@keyframes gradientShift { 0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;} }
+.hero h1 { font-size:3rem; color:#00aaff; text-shadow:0 0 15px rgba(0,170,255,0.3); margin-bottom:20px; }
+.hero p { font-size:1.25rem; color:#c0c0c0; margin-bottom:30px; max-width:800px;}
+
+.contact-section { max-width:800px; margin:60px auto; padding:0 20px; text-align:center;}
+.contact-section h2 { font-size:2rem; color:#00aaff; margin-bottom:30px;}
+.contact-info { font-size:1.5rem; margin-bottom:20px; color:#00ffff; text-shadow:0 0 10px #00aaff,0 0 20px #00aaff50;}
+.contact-info a { color:#00ffff; text-decoration:none; transition:0.3s;}
+.contact-info a:hover { color:#00aaff; text-shadow:0 0 10px #00aaff,0 0 20px #00aaff70;}
+
+footer { text-align:center; padding:40px 20px; background:#111; border-top:1px solid #00aaff20; color:#888; margin-top:60px;}
+.hidden { display:none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Hector Hernandez</div>
+  <nav>
+    <a href="index.html">Home / Inicio</a>
+    <a href="videoclasses.html">Video Classes / Clases de Video</a>
+    <a href="consulting.html">Consulting / Consultoría</a>
+    <a href="about.html">About / Acerca</a>
+    <a href="contact.html">Contact / Contacto</a>
+    <span class="lang-switch" onclick="setLanguage('en')">EN</span>
+    <span class="lang-switch" onclick="setLanguage('es')">ES</span>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1 id="hero-title-en">Contact Hector Hernandez</h1>
+  <h1 id="hero-title-es" class="hidden">Contacto Hector Hernandez</h1>
+  <p id="hero-text-en">Have a question or want to collaborate? Reach out directly via phone or email!</p>
+  <p id="hero-text-es" class="hidden">¿Tienes preguntas o quieres colaborar? ¡Contáctame directamente por teléfono o correo!</p>
+</section>
+
+<section class="contact-section">
+  <h2 id="contact-title-en">Get in Touch</h2>
+  <h2 id="contact-title-es" class="hidden">Ponte en Contacto</h2>
+
+  <div class="contact-info">
+    <span id="phone-en">📞 <a href="tel:9565169622">956-516-9622</a></span>
+    <span id="phone-es" class="hidden">📞 <a href="tel:9565169622">956-516-9622</a></span><br>
+    <span id="email-en">✉️ <a href="mailto:hernandezjrhector34@gmail.com">hernandezjrhector34@gmail.com</a></span>
+    <span id="email-es" class="hidden">✉️ <a href="mailto:hernandezjrhector34@gmail.com">hernandezjrhector34@gmail.com</a></span>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Hector Hernandez – Church Media System Consultants. All rights reserved / Todos los derechos reservados.
+</footer>
+
+<script>
+function setLanguage(lang){
+  const en = document.querySelectorAll('[id$="-en"]');
+  const es = document.querySelectorAll('[id$="-es"]');
+  if(lang==='en'){ en.forEach(el=>el.classList.remove('hidden')); es.forEach(el=>el.classList.add('hidden')); }
+  else{ en.forEach(el=>el.classList.add('hidden')); es.forEach(el=>el.classList.remove('hidden')); }
+}
+</script>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hector Hernandez – Church Media System Consultants</title>
+  <title>Video Editing Classes – Hector Hernandez</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -30,14 +30,14 @@
     }
     header nav a {
       color: #e0e0e0;
-      margin-left: 20px;
+      margin-left: 30px;
       text-decoration: none;
       font-weight: 500;
       transition: 0.3s;
     }
     header nav a:hover { color: #00aaff; }
 
-    /* Language Switch Buttons */
+    /* Language Buttons */
     .lang-switch {
       margin-left: 15px;
       padding: 5px 12px;
@@ -52,7 +52,7 @@
 
     /* Hero Section */
     .hero {
-      height: 100vh;
+      height: 50vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -68,31 +68,27 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-    .hero h1 { font-size: 3rem; color: #00aaff; text-shadow: 0 0 15px rgba(0,170,255,0.3); margin-bottom: 20px; }
-    .hero p { font-size: 1.25rem; color: #c0c0c0; margin-bottom: 30px; }
-    .hero .contact-info { font-size: 1.5rem; font-weight: bold; color: #00ffff; margin-top: 15px; text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff50; }
-    .hero .cta-buttons a {
-      display: inline-block;
-      margin: 10px 15px;
-      padding: 15px 30px;
-      font-size: 1rem;
-      font-weight: 600;
-      color: #fff;
-      background: linear-gradient(90deg, #00aaff, #008ecc);
-      border-radius: 8px;
-      text-decoration: none;
-      transition: 0.3s, box-shadow 0.3s;
+    .hero h1 {
+      font-size: 3rem;
+      color: #00aaff;
+      text-shadow: 0 0 15px rgba(0,170,255,0.3);
+      margin-bottom: 20px;
     }
-    .hero .cta-buttons a:hover { box-shadow: 0 0 20px #00aaff; }
+    .hero p {
+      font-size: 1.25rem;
+      color: #c0c0c0;
+      max-width: 800px;
+      margin-bottom: 30px;
+    }
 
-    /* Services Section */
-    .services {
+    /* Classes Section */
+    .classes {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
       padding: 80px 40px;
     }
-    .service-card {
+    .class-card {
       background: linear-gradient(145deg, #111111, #1a1a1a);
       border: 1px solid #0a4dff20;
       border-radius: 15px;
@@ -101,10 +97,15 @@
       box-shadow: 0 5px 20px rgba(0,170,255,0.15);
       transition: all 0.3s ease;
     }
-    .service-card:hover { box-shadow: 0 10px 30px rgba(0,170,255,0.3); transform: translateY(-5px); }
-    .service-card h3 { color: #00aaff; margin-bottom: 15px; }
-    .service-card p { color: #c0c0c0; margin-bottom: 20px; }
-    .service-card a {
+    .class-card:hover {
+      box-shadow: 0 10px 30px rgba(0,170,255,0.3);
+      transform: translateY(-5px);
+    }
+    .class-card h3 { color: #00aaff; margin-bottom: 10px; }
+    .class-card .price { font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; color: #00ffff; }
+    .class-card .duration { margin-bottom: 15px; color: #c0c0c0; }
+    .class-card p { color: #c0c0c0; margin-bottom: 20px; }
+    .class-card a {
       display: inline-block;
       padding: 10px 20px;
       font-weight: 600;
@@ -114,13 +115,19 @@
       text-decoration: none;
       transition: 0.3s, box-shadow 0.3s;
     }
-    .service-card a:hover { box-shadow: 0 0 15px #00aaff; }
+    .class-card a:hover {
+      box-shadow: 0 0 15px #00aaff;
+    }
 
     /* Footer */
-    footer { text-align: center; padding: 40px 20px; background: #111111; border-top: 1px solid #00aaff20; color: #888888; }
-
-    /* Glow Text */
-    .glow { color: #00aaff; text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff30; }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #111111;
+      border-top: 1px solid #00aaff20;
+      color: #888888;
+      margin-top: 60px;
+    }
   </style>
 </head>
 <body>
@@ -133,30 +140,46 @@
       <a href="videoclasses.html">Video Classes</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <!-- Bilingual Language Switch -->
-      <a href="index.html" class="lang-switch">EN</a>
-      <a href="index-es.html" class="lang-switch">ES</a>
+
+      <!-- Language Switch Buttons -->
+      <a href="videoclasses.html" class="lang-switch">EN</a>
+      <a href="videoclasses-es.html" class="lang-switch">ES</a>
     </nav>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <h1 class="glow">Unlock the Power of Video Editing & Social Media</h1>
-    <p>Learn professional techniques, streamline your workflow, and elevate your content.</p>
-    <div class="cta-buttons">
-      <a href="videoclasses.html">Video Editing Classes</a>
-    </div>
-    <div class="contact-info">
-      📞 956 516 9622 | ✉️ hernandezjrhector34@gmail.com
-    </div>
+    <h1>Video Editing Classes</h1>
+    <p>Choose the right class for your skill level and business goals. Learn professional video editing and social media workflows step-by-step.</p>
   </section>
 
-  <!-- Services Section -->
-  <section class="services">
-    <div class="service-card">
-      <h3>Video Editing Classes</h3>
-      <p>Hands-on, beginner to pro, CapCut, and professional workflows.</p>
-      <a href="videoclasses.html">View Details</a>
+  <!-- Classes Section -->
+  <section class="classes">
+    <!-- Starter Class -->
+    <div class="class-card">
+      <h3>Starter – Social Media Video Foundations</h3>
+      <div class="price">$100</div>
+      <div class="duration">Duration: 2 hours, 1-day session</div>
+      <p>Foundational class for anyone beginning their journey in social media video creation. Learn essential skills for short-form content creation.</p>
+      <a href="starterclass.html">View Details</a>
+    </div>
+
+    <!-- Basic Class -->
+    <div class="class-card">
+      <h3>Basic – CapCut Class</h3>
+      <div class="price">$200</div>
+      <div class="duration">Duration: 2 hours/day, 2-day session</div>
+      <p>Expand on the Starter class with hands-on editing experience. Includes step-by-step beginner-friendly sessions and live demonstrations.</p>
+      <a href="basicclass.html">View Details</a>
+    </div>
+
+    <!-- Premium Class -->
+    <div class="class-card">
+      <h3>Premium – Extended Bootcamp</h3>
+      <div class="price">$400</div>
+      <div class="duration">Duration: 2–3 hours/day, 5-day intensive course</div>
+      <p>Comprehensive multi-day professional workflow course. Includes advanced social media and cinematic video production techniques.</p>
+      <a href="premiumclass.html">View Details</a>
     </div>
   </section>
 
